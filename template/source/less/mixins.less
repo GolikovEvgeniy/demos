@@ -1,0 +1,152 @@
+/* GRID */
+
+.clearfix {
+  zoom:1;
+  &:before, &:after{ content:""; display:table; }
+  &:after{ clear: both; }
+}
+
+.wrapper {
+  .media(@tablet, {
+    width: 100%;
+  });
+
+  .media(@desktop, {
+    margin: 0 auto;
+    max-width: 980px;
+  });
+}
+
+.container {
+  padding: 0 @gutter/2;
+}
+
+.row-nested{
+  margin: 0 @gutter/-2;
+  .clearfix();
+}
+
+.row {
+  .clearfix();
+}
+
+.column(@n) {
+  position: relative;
+  float: left;
+  width: 100%*((@n / @columns));
+  padding: 0 (@gutter / 2);
+}
+.offset(@n) {
+  margin-left: 100%*(@n / @columns);
+}
+.push(@columns) {
+  left: 100%*(@n / @columns);
+}
+.pull(@columns) {
+  right: 100%*(@n / @columns);
+}
+
+/* MEDIA */
+
+.media(@screenSize; @rules) {
+  @media @screenSize {
+    @rules();
+  }
+}
+
+/* FONT */
+
+.title {
+  font-family: @font-family-title;
+  font-size: @font-title;
+  line-height: @line-height-small;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #464b4f;
+
+  .media(@tablet, {
+    font-size: 3rem;
+  });
+
+  .media(@mobile, {
+    font-size: 2rem;
+  });
+}
+
+.subtitle {
+  font-family: @font-family-title;
+  font-size: @font-text-medium;
+  line-height: @line-height-large;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #464b4f;
+}
+
+.text-small {
+  font-size: @font-text-small;
+  line-height: @line-height-medium;
+  color: #fff;
+}
+
+.text-medium {
+  font-size: @font-text-medium;
+  line-height: @line-height-small;
+  color: #888a8b;
+
+  .media(@mobile, {
+    font-size: @font-text-small;
+    line-height: @line-height-small;
+  });
+}
+
+.text-large {
+  font-size: @font-text-large;
+  line-height: @line-height-large;
+  color: #464b4f;
+  .media(@tablet, {
+    font-size: @font-text-medium;
+    line-height: @line-height-small;
+  });
+
+  .media(@mobile, {
+    font-size: @font-text-small;
+    line-height: @line-height-small;
+  });
+}
+
+.caption {
+  font-size: @font-caption;
+  line-height: @line-height-medium;
+  color: #fff;
+}
+
+/* Button */
+
+.button {
+  display: block;
+  border: none;
+  outline: none;
+  padding: 15px 0;
+  .text-medium();
+  background-color: #7b77c9;
+  color: #fff;
+  border-radius: 4px;
+  text-align: center;
+
+  &:hover {
+    background-color: darken(#7b77c9, 10%);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

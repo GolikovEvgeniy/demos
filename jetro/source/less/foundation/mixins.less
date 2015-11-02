@@ -1,0 +1,144 @@
+/*******
+  GRID
+********/
+
+/* Clear floats */
+
+.clearfix() {
+  zoom:1;
+  &:before, &:after{ content:""; display:table; }
+  &:after{ clear: both; }
+}
+
+/* Define individual cells  with symmetric or
+   assymetric widths (should be cleared in group or by
+   specifying nth-child() manually) */
+
+.cell(@n, @column-gutter: @gutter) {
+  width: 100%*(@n / @columns);
+  padding: 0 (@column-gutter / 2);
+}
+
+/* Define symmetric grid of cells, ONLY WITH SAME WIDTH 
+   (good for gallery, thumbnails) */
+
+.grid(@n, @column-gutter: @gutter) {
+  width: 100%*(@n / @columns);
+  padding: 0 (@column-gutter / 2);
+
+  @index: @columns / @n;
+  &:nth-child(@{index}n + 1) {
+    clear: both;
+  }
+}
+
+/* Offset column from left edge */
+
+.offset(@n) {
+  margin-left: 100%*(@n / @columns);
+}
+
+/* Push column left with relative positioning */
+
+.push(@n) {
+  left: 100%*(@n / @columns);
+}
+
+/* Pull column right with relative positioning */
+
+.pull(@n) {
+  right: 100%*(@n / @columns);
+}
+
+
+
+/**************** 
+  MEDIA QUERIES
+*****************/
+
+/* General */
+
+.media(@screenSize; @rules) {
+  @media @screenSize {
+    @rules();
+  }
+}
+
+/* Specific */
+
+.tiny(@rules) {
+  @media @screen-tn {
+    @rules();
+  }
+}
+
+.small(@rules) {
+  @media @screen-sm {
+    @rules();
+  }
+}
+
+.medium(@rules) {
+  @media @screen-md {
+    @rules();
+  }
+}
+
+.large(@rules) {
+  @media @screen-lg {
+    @rules();
+  }
+}
+
+.extra-large(@rules) {
+  @media @screen-xl {
+    @rules();
+  }
+}
+
+
+
+/*******
+  FONT
+********/
+
+.title() {
+
+}
+
+.headline() {
+
+}
+
+.subhead() {
+
+}
+
+.text() {
+
+}
+
+.caption() {
+
+}
+
+.link() {
+
+}
+
+.field() {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

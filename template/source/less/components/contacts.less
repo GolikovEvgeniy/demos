@@ -1,0 +1,97 @@
+.contacts {
+  background: @main-bg;
+  padding: 250px 0;
+  text-align: center;
+
+  .media(@mobile, {
+    padding: 150px 0;
+  });
+
+  &__title {
+    font-family: @font-family-title;
+    font-size: 10rem;
+    line-height: @line-height-small;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #464b4f;
+    padding: 0 20px;
+    text-align: center;
+    color: #fff;
+
+    .media(@tablet, {
+      width: 100%;
+      margin: 0 0 50px;
+    });
+
+    .media(@desktop, {
+      margin: 0 auto 70px;
+      max-width: 960px;
+    });
+  }
+
+  &__text {
+    .media(@tablet, {
+      width: 100%;
+      margin-bottom: 50px;
+    });
+
+    .media(@desktop, {
+      margin: 0 auto 70px;
+      max-width: 520px;
+    });
+    .text-medium();
+    color: #fff;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  &__form {
+    .row();
+    display: inline-block;
+    padding: 0 60px;
+
+    .media(@tablet, {
+      display: block;
+    });
+
+    .media(@mobile, {
+      padding: 0 20px;
+    });
+  }
+
+  &__email-field {
+    float: left;
+    border: none;
+    outline: none;
+    padding: 15px;
+    margin: 0;
+    .text-medium();
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 380px;
+    color: #464b4f;
+
+    .media(@tablet, {
+      width: 100%;
+      float: none;
+      margin-bottom: 20px;
+    });
+  }
+
+  &__subscribe-button {
+    .button();
+    float: left;
+    width: 210px;
+
+    .media(@tablet, {
+      width: 100%;
+      float: none;
+    });
+  }
+
+
+}
+
+
+
+

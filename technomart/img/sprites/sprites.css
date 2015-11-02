@@ -1,0 +1,274 @@
+.bread_crumb_arrow, .bread_crumb_dot, .bread_crumb_house, .icon_bookmark_active, .icon_bookmark_hover, .icon_bookmark, .icon_cart_active, .icon_cart_hover, .icon_cart, .icon_checkbox_checked_disabled, .icon_checkbox_checked_hover, .icon_checkbox_checked, .icon_checkbox_disabled, .icon_checkbox_hover, .icon_checkbox, .icon_delivery, .icon_down_hover, .icon_down, .icon_fb, .icon_inst, .icon_instrument, .icon_list, .icon_login_active, .icon_login_hover, .icon_login, .icon_material, .icon_new_label, .icon_phone, .icon_radio_checked_disabled, .icon_radio_checked_hover, .icon_radio_checked, .icon_radio_disabled, .icon_radio_hover, .icon_radio, .icon_salecart, .icon_search_focused, .icon_search_hover, .icon_search, .icon_technic, .icon_up_hover, .icon_up, .icon_vk, .icon_user_active, .icon_user_hover, .icon_user{
+	background: url(sprites.png) no-repeat;
+}
+
+.bread_crumb_arrow{
+	background-position: 0 0;
+	width: 8px;
+	height: 12px;
+}
+
+.bread_crumb_dot{
+	background-position: -16.000003814697266px -4.000007629394531px ;
+	width: 4px;
+	height: 5px;
+}
+
+.bread_crumb_house{
+	background-position: -25.000003814697266px 0;
+	width: 15px;
+	height: 12px;
+}
+
+.icon_bookmark_active{
+	background-position: -47.000003814697266px 0;
+	width: 14px;
+	height: 16px;
+}
+
+.icon_bookmark_hover{
+	background-position: -69.00000381469727px 0;
+	width: 14px;
+	height: 16px;
+}
+
+.icon_bookmark{
+	background-position: -93.00000381469727px 0;
+	width: 14px;
+	height: 16px;
+}
+
+.icon_cart_active{
+	background-position: -119.00000381469727px 0;
+	width: 17px;
+	height: 16px;
+}
+
+.icon_cart_hover{
+	background-position: -149.00000381469727px 0;
+	width: 17px;
+	height: 16px;
+}
+
+.icon_cart{
+	background-position: -178.00000381469727px 0;
+	width: 17px;
+	height: 16px;
+}
+
+.icon_checkbox_checked_disabled{
+	background-position: 0 -33px ;
+	width: 27px;
+	height: 23px;
+}
+
+.icon_checkbox_checked_hover{
+	background-position: -39.000003814697266px -34px ;
+	width: 27px;
+	height: 23px;
+}
+
+.icon_checkbox_checked{
+	background-position: -80.00000381469727px -34px ;
+	width: 27px;
+	height: 23px;
+}
+
+.icon_checkbox_disabled{
+	background-position: -119.00000381469727px -34px ;
+	width: 23px;
+	height: 23px;
+}
+
+.icon_checkbox_hover{
+	background-position: -154.00000381469727px -34px ;
+	width: 23px;
+	height: 23px;
+}
+
+.icon_checkbox{
+	background-position: -191.00000381469727px -33px ;
+	width: 23px;
+	height: 23px;
+}
+
+.icon_delivery{
+	background-position: -105.00000381469727px -100.00000762939453px ;
+	width: 78px;
+	height: 63px;
+}
+
+.icon_down_hover{
+	background-position: -206.00000381469727px 0;
+	width: 25px;
+	height: 14px;
+}
+
+.icon_down{
+	background-position: -244.00001907348633px 0;
+	width: 25px;
+	height: 14px;
+}
+
+.icon_fb{
+	background-position: -519.9999885559082px -41px ;
+	width: 10px;
+	height: 18px;
+}
+
+.icon_inst{
+	background-position: -565.9999885559082px -41px ;
+	width: 17px;
+	height: 17px;
+}
+
+.icon_instrument{
+	background-position: -377.9999885559082px -100.00000762939453px ;
+	width: 75px;
+	height: 61px;
+}
+
+.icon_list{
+	background-position: -460.0000190734863px -43.00000762939453px ;
+	width: 25px;
+	height: 2px;
+}
+
+.icon_login_active{
+	background-position: -357.0000190734863px 0;
+	width: 20px;
+	height: 17px;
+}
+
+.icon_login_hover{
+	background-position: -390.0000190734863px 0;
+	width: 20px;
+	height: 17px;
+}
+
+.icon_login{
+	background-position: -424.0000190734863px 0;
+	width: 20px;
+	height: 17px;
+}
+
+.icon_material{
+	background-position: -517.9999885559082px -98.00000762939453px ;
+	width: 44px;
+	height: 65px;
+}
+
+.icon_new_label{
+	background-position: -602.9999866485596px -99.00001525878906px ;
+	width: 60px;
+	height: 59px;
+}
+
+.icon_phone{
+	background-position: -457.9999885559082px 0;
+	width: 19px;
+	height: 19px;
+}
+
+.icon_radio_checked_disabled{
+	background-position: -228.00001907348633px -33px ;
+	width: 25px;
+	height: 25px;
+}
+
+.icon_radio_checked_hover{
+	background-position: -267.0000190734863px -33px ;
+	width: 25px;
+	height: 25px;
+}
+
+.icon_radio_checked{
+	background-position: -304.0000190734863px -32px ;
+	width: 25px;
+	height: 25px;
+}
+
+.icon_radio_disabled{
+	background-position: -343.0000190734863px -33px ;
+	width: 25px;
+	height: 25px;
+}
+
+.icon_radio_hover{
+	background-position: -379.0000190734863px -33px ;
+	width: 25px;
+	height: 25px;
+}
+
+.icon_radio{
+	background-position: -418.0000190734863px -33px ;
+	width: 25px;
+	height: 25px;
+}
+
+.icon_salecart{
+	background-position: 0 -100.00000762939453px ;
+	width: 59px;
+	height: 72px;
+}
+
+.icon_search_focused{
+	background-position: -490.9999885559082px 0;
+	width: 17px;
+	height: 17px;
+}
+
+.icon_search_hover{
+	background-position: -520.9999885559082px 0;
+	width: 17px;
+	height: 17px;
+}
+
+.icon_search{
+	background-position: -550.9999885559082px 0;
+	width: 17px;
+	height: 17px;
+}
+
+.icon_technic{
+	background-position: -247.98750686645508px -99.00000762939453px ;
+	width: 78px;
+	height: 62px;
+}
+
+.icon_up_hover{
+	background-position: -279.0000190734863px 0;
+	width: 25px;
+	height: 14px;
+}
+
+.icon_up{
+	background-position: -316.9999885559082px 0;
+	width: 25px;
+	height: 14px;
+}
+
+.icon_vk{
+	background-position: -616.9999885559082px -43px ;
+	width: 20px;
+	height: 12px;
+}
+
+.icon_user_active{
+	background-position: -580.9999885559082px 0;
+	width: 20px;
+	height: 18px;
+}
+
+.icon_user_hover{
+	background-position: -611.9999885559082px 0;
+	width: 20px;
+	height: 18px;
+}
+
+.icon_user{
+	background-position: -642.9999866485596px 0;
+	width: 20px;
+	height: 18px;
+}
+

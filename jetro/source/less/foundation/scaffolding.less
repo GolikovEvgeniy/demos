@@ -1,0 +1,166 @@
+/********
+  Fonts 
+*********/
+
+@font-face {
+    font-family: 'bebasregular';
+    src: url('../fonts/bebas___-webfont.eot');
+    src: url('../fonts/bebas___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebas___-webfont.woff2') format('woff2'),
+         url('../fonts/bebas___-webfont.woff') format('woff'),
+         url('../fonts/bebas___-webfont.ttf') format('truetype'),
+         url('../fonts/bebas___-webfont.svg#bebasregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Helvetica-Narrow';
+  src: url('../fonts/Helvetica-Narrow.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/Helvetica-Narrow.woff') format('woff'),
+       url('../fonts/Helvetica-Narrow.ttf')  format('truetype'),
+       url('../fonts/Helvetica-Narrow.svg#Helvetica-Narrow') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/**************
+  Basic rules
+***************/
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  font-size: @font-size--base;
+}
+
+body {
+  min-width: 960px;
+  background: url('../img/page-bg.png');
+}
+
+
+/*************
+  Typography
+**************/
+
+h1,
+h2,
+h3,
+h4,
+a,
+input,
+textarea {
+  font-family: @font-family--primary;
+}
+
+p {
+  font-family: @font-family--secondary;
+}
+
+h1 {
+  margin: 0 0 2.4rem;
+  font-size: 2.4rem;
+  line-height: 1.33333333;
+}
+
+h2 {
+  margin: 0 0 2rem;
+  font-size: 2rem;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: 1.6rem;
+  line-height: 1.125;
+}
+
+h4 {
+  font-size: 1.4rem;
+  line-height: normal;
+}
+
+h5 {
+  font-size: 1.2rem;
+  line-height: 1.66666667;
+}
+
+p,
+blockquote {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+a {
+  font-size: 1.6rem;
+  line-height: normal;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    color: @color-primary;
+  }
+
+  &:hover span,
+  &:active span {
+    color: @color-primary--light;
+  }
+}
+
+input,
+textarea {
+  font-size: 1.2rem;
+  line-height: 2.33333333;
+  font-weight: bold;
+  text-transform: uppercase;
+  word-spacing: 0.3rem;
+}
+
+img {
+  max-width: 100%;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

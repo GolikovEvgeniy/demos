@@ -1,0 +1,62 @@
+.download {
+  padding: 90px 0 115px;
+  width: 100%;
+  min-width: 768px;
+  background: @main-bg;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: @font-family-bold;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__text {
+    margin: 0 auto;
+    max-width: 850px;
+    font-family: @font-family-medium;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__links {
+    margin-top: 40px;
+    display: inline-block;
+    .clearfix();
+  }
+
+  &__btn {
+    position: relative;
+    padding: 19px 22px 18px;
+    margin: 0 12px;
+    float: left;
+    width: 300px;
+    text-align: left;
+    vertical-align: middle;
+
+    &--apple:after,
+    &--android:after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      padding: 15px;
+      font-size: 26px;
+      line-height: 26px;
+      font-family: @font-family-iconic;
+      background: #16a085;
+      border-radius: 0 2px 2px 0;
+    }
+
+    &--apple:after {
+      content: "\e806";
+    }
+
+    &--android:after {
+      content: "\e807";
+    }
+  }
+}

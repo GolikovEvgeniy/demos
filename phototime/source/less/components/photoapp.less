@@ -1,0 +1,31 @@
+.photoapp {
+  background-color: @main-bg;
+
+  &__wrapper {
+    padding: 100px 0 90px;
+    margin: 0 auto;
+    max-width: 1152px;
+    min-width: 768px;
+    background: url('../img/photoapp-bkg.png') no-repeat 90% -45%;
+    .clearfix();
+
+    .media(~"(max-width: 900px)", {
+      background-position: 95% -60%;
+    });
+  }
+
+  &__item {
+    float: left;
+    margin-left: 64px;
+    width: 448px;
+
+    .media(~"(max-width: 900px)", {
+      margin-left: 12px;
+    });
+  }
+
+  &__btn {
+    margin-top: 48px;
+    width: 192px;
+  }
+}

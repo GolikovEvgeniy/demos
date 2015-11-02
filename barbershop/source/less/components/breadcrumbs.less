@@ -1,0 +1,41 @@
+.breadcrumbs {
+  margin: 0;
+  padding: 52px 10px;
+  list-style: none;
+  vertical-align: top;
+  font-size: 0;
+
+  &__title {
+    padding-bottom: 15px;
+    .font-title();
+  }
+
+  &__item {
+    display: inline-block;
+    position: relative;
+    .font-text();
+    margin-right: 40px;
+
+    & a {
+      color: @black;
+      cursor: pointer;
+      text-decoration: none;
+
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &--with-rhomb::after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    right: -25px;
+    width: 8px;
+    height: 8px;
+    background-color: @black;
+    transform: rotate(45deg);
+  }
+}

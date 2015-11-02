@@ -1,0 +1,80 @@
+.contacts {
+  position: relative;
+  width: 100%;
+  min-width: 768px;
+  height: 100%;
+  background: url('../img/contacts-bkg.jpg') no-repeat center;
+  background-size: cover;
+
+  &__wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 768px;
+    height: 120px;
+    text-align: center;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 24px;
+    font-family: @font-family-bold;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 3px;
+  }
+
+  &__form {
+    display: inline-block;
+    .clearfix();
+  }
+  
+  &__email-field {
+    padding: 23px 20px 18px;
+    display: block;
+    float: left;
+    width: 280px;
+    min-height: 60px;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: @font-family-medium;
+    text-transform: uppercase;
+    border: none;
+    background: #fff;
+    letter-spacing: 1px;
+    outline: none;
+    border-radius: 2px 0 0 2px;
+  }
+
+  &__email-field::placeholder {
+    color: #000;
+  }
+
+  &__submit-btn {
+    float: left;
+    min-height: 60px;
+    border-radius: 0 2px 2px 0;
+  }
+
+  &__submit-btn:after {
+    display: block;
+    width: 60px;
+    content: "\e804";
+    font-size: 32px;
+    line-height: 30px;
+    font-family: @font-family-iconic;
+  }
+}
+
+
+
+
+
+
+
+
+

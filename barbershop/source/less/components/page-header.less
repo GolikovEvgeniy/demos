@@ -1,0 +1,55 @@
+.page-header {
+  background-color: @black;
+}
+
+.main-menu {
+  margin: 0 10px;
+  padding: 0;
+  list-style: none;
+  .clearfix();
+
+  &__item {
+    padding: 0 21px;
+    float: left;
+    cursor: pointer;
+    .font-basic();
+
+    &:hover,
+    &:active {
+      background-color: #242424;
+    }
+
+    a {
+      display: block;
+      padding: 15px 0;
+      color: @white-pure;
+      text-decoration: none;
+    }
+
+    &--current a {
+      border-bottom: 3px solid @white-pure;
+      padding-bottom: 12px;
+    }
+
+    &--enter {
+      float: right;
+      padding-left: 40px;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 27px;
+        left: 10px;
+        width: 17px;
+        height: 16px;
+        background: url('../img/icons/icon-login.png') no-repeat center;
+      }
+
+      &:hover::before,
+      &:active::before {
+        background-image: url('../img/icons/icon-login-hover.png');
+      }
+    }
+  }
+}

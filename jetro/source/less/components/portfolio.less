@@ -1,0 +1,29 @@
+.portfolio {
+
+  &__filter {
+    padding: 1.2rem 0 3.7rem;
+
+    &-item {
+      display: inline-block;
+      padding: 0.6rem 1.2rem 0.7rem;
+      font-size: 1.4rem;
+      text-decoration: none;
+      color: @color-secondary;
+      
+      &.is-active,
+      &:hover,
+      &:active {
+        color: @color-white;
+        background: @color-primary;
+      }
+    }
+  }
+
+  &__item {
+    .grid(3);
+
+    &.is-hidden {
+      display: none;
+    }
+  }
+}

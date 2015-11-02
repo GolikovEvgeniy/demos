@@ -1,0 +1,100 @@
+.page-footer {
+  background: @color-primary--light;
+
+  &__content {
+    padding: 4rem 0 5rem;
+    .clearfix();
+    background: @color-primary;
+  }
+
+  &__item {
+    .cell(4, 0);
+
+    &--company-info {
+      padding-left: 3.5rem;
+      padding-right: 1rem;
+    }
+
+    &--twits {
+      padding: 0 4.5rem;
+    }
+
+    &--contacts {
+      padding-left: 1.5rem;
+      padding-right: 4rem;
+
+      & a {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-family: @font-family--secondary;
+        color: @color-white;
+        text-decoration: none;
+
+        &:hover,
+        &:active {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__headline {
+    color: @color-white;
+    word-spacing: 0.5rem;
+  }
+
+  &__text {
+    color: @color-white;
+
+    & span {
+      color: @color-primary--light;
+    }
+  }
+
+  &__social-media {
+    list-style: none;
+    padding: 0;
+    margin: 1.8rem 0 0;
+    .clearfix();
+
+    &-item {
+      float: left;
+      margin-right: 5px;
+    }
+
+    &-btn {
+      display: block;
+      width: 30px;
+      height: 31px;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      &--facebook {
+        background-image: url('../img/social-facebook.png');
+      }
+
+      &--twitter {
+        background-image: url('../img/social-twitter.png');
+      }
+
+      &--email {
+        background-image: url('../img/social-email.png');
+      }
+
+      &--rss {
+        background-image: url('../img/social-rss.png');
+      }
+
+      &--vimeo {
+        background-image: url('../img/social-vimeo.png');
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

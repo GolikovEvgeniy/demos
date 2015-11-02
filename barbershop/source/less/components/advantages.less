@@ -1,0 +1,36 @@
+.advantages {
+  .clearfix();
+  padding-bottom: 80px;
+
+  &__item {
+    .columns(4);
+    float: left;
+  }
+
+  &__title {
+    position: relative;
+    padding-bottom: 90px;
+    .font-title();
+    color: @white-creamy;
+    text-align: center;
+
+    &::before {
+      content: '';
+      position: absolute;
+      margin-left: -14px;
+      top: 70px;
+      left: 50%;
+      width: 28px;
+      height: 28px;
+      background-color: white;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__text {
+    padding: 0 5px;
+    .font-text();
+    color: @white-creamy;
+    text-align: center;
+  }
+}

@@ -1,0 +1,64 @@
+.about {
+
+  &__article {
+
+    & p,
+    & blockquote {
+      .cell(12);
+    }
+
+    & p:last-child {
+      margin-bottom: 0;
+    }
+
+    & blockquote {
+      position: relative;
+      font-style: italic;
+      font-weight: 100;
+      padding-left: 9rem;
+    }
+
+    & blockquote::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 7rem;
+      width: 0.8rem;
+      height: 100%;
+      background: @color-primary;
+    }
+
+    & .first-letter::before {
+      content: 'D';
+      float: left;
+      margin: 0 0.5rem 0 0;
+      font-size: 3.6rem;
+      line-height: 1;
+      font-weight: bold;
+      color: @color-primary;
+    }
+  }
+
+  &__photo {
+    .cell(4);
+    margin-right: 1rem;
+
+    & img {
+      display: block;
+      padding: 0.2rem;
+      width: 100%;
+      height: auto;
+      border: 0.1rem solid @color-secondary;
+    }
+  }
+
+  &__alerts {
+    padding: 2rem 0;
+
+    &-item {
+      padding: 1rem;
+      width: 100%;
+    }
+  }
+}

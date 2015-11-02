@@ -1,0 +1,82 @@
+.page-footer {
+  padding: 50px 0;
+  background: url('../img/bkg_img.png') no-repeat center;
+  background-size: cover;
+}
+
+.copyright {
+  .text-medium();
+  line-height: 2;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.social-buttons {
+  display: block;
+  width: 300px;
+  margin: 0 auto 50px;
+  text-align: center;
+
+  &__item {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    color: #dbdbdb;
+
+    &:hover {
+      color: #464b4f;
+      text-shadow: 0 1px 4px rgba(100, 100, 100, 0.7);
+    }
+  }
+
+
+  &__item:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1rem;
+  margin-right: 1.5rem;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  font-size: 30px;
+ 
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+ 
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: 1.5rem;
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+}  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+ 
+.social-buttons__item--twitter:before { content: '\e800'; } /* '' */
+.social-buttons__item--instagram:before { content: '\e801'; } /* '' */
+.social-buttons__item--dribble:before { content: '\e802'; } /* '' */
+.social-buttons__item--behance:before { content: '\e803'; } /* '' */
+
+
+
+
+
+
+
+
+

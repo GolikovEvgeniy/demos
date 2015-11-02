@@ -1,0 +1,33 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 960px;
+  font-family: @font-family;
+}
+
+p {
+  margin: 0;
+}
+
+.main-page {
+  background: url('../img/index-bkg.jpg') no-repeat top center;
+  background-color: @black;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.page-content {
+  background: url('../img/gold-bkg.jpg');
+}
+
+.container {
+  .clearfix();
+}

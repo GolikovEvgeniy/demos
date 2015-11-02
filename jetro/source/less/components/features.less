@@ -1,0 +1,59 @@
+.features {
+  padding-top: 2rem;
+
+  &__item {
+    .cell(4);
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding-left: 7rem;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    color: @color-primary;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 55px;
+      width: 5.5rem;
+      height: 55px;
+      height: 5.5rem;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--portfolio::before {
+      background-image: url('../img/icon-features1.png');
+    }
+
+    &--service::before {
+      background-image: url('../img/icon-features2.png');
+    }
+
+    &--social::before {
+      background-image: url('../img/icon-features3.png');
+    }
+  }
+
+  &__button {
+    margin-top: 1.5rem;
+    display: inline-block;
+    padding: 0 1.2rem;
+    line-height: 3.1rem;
+    text-align: center;
+    vertical-align: middle;
+    text-decoration: none;
+    color: @color-white;
+    background: @color-primary;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: @color-white;
+    }
+  }
+}

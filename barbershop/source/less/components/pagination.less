@@ -1,0 +1,44 @@
+.pagination {
+  padding: 20px 0 40px;
+
+  &__group {
+    margin: 0;
+    margin-left: 25%;
+    padding: 0;
+    list-style: none;
+    .columns(9);
+    font-size: 0;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__link {
+    display: block;
+    .font-text();
+    width: 43px;
+    padding: 10px 0 9px;
+    margin-right: 7px;
+    text-align: center;
+    color: @white-pure;
+    text-decoration: none;
+    background-color: @black;
+
+    &:hover {
+      background-color: @brown;
+    }
+
+    &--active {
+      background-color: @white-pure;
+      color: @black;
+
+      &:hover {
+        background-color: @white-pure;
+      }
+    }
+  }
+
+
+}

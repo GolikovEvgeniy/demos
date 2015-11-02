@@ -1,0 +1,101 @@
+.page-footer {
+  padding: 60px 0;
+  background-image: url('../img/footer-bkg.jpg');
+  .clearfix();
+
+  .contacts {
+    float: left;
+    .columns(4);
+    .font-text();
+    color: @white-pure;
+  }
+
+  .social {
+    float: left;
+    .columns(4);
+    text-align: center;
+    font-size: 0;
+
+    &__text {
+      .font-text();
+      color: @white-pure;
+      text-align: center;
+    }
+
+    &__btn {
+      display: inline-block;
+      margin: 3px; 
+      width: 43px;
+      height: 43px;
+      background-color: @black;
+
+      &:hover,
+      &:active {
+        background-color: @white-pure;
+      }
+
+      &--vk {
+        background-image: url('../img/icons/icon-social-vk.png');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:hover,
+        &:active {
+          background-image: url('../img/icons/icon-social-vk-hover.png');
+        }
+      }
+
+      &--fb {
+        background-image: url('../img/icons/icon-social-fb.png');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:hover,
+        &:active {
+          background-image: url('../img/icons/icon-social-fb-hover.png');
+        }
+      }
+
+      &--inst {
+        background-image: url('../img/icons/icon-social-inst.png');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &:hover,
+        &:active {
+          background-image: url('../img/icons/icon-social-inst-hover.png');
+        }
+      }
+    }
+  }
+
+  .copyright {
+    float: left;
+    .columns(4);
+    .clearfix();
+
+    &__text {
+      padding-right: 20px;
+      .font-text();
+      color: @white-pure;
+      text-align: right;
+    }
+
+    &__button {
+      float: right;
+      display: block;
+      width: 140px;
+      .font-basic();
+      background: @black;
+      color: @white-pure;
+      text-decoration: none;
+      text-align: center;
+
+      &:hover,
+      &:active {
+        background: @white-pure;
+        color: @black;
+      }
+    }
+  }
+ }

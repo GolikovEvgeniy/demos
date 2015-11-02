@@ -1,0 +1,35 @@
+.clearfix {
+  zoom:1;
+  &:before, &:after{ content:""; display:table; }
+  &:after{ clear: both; }
+}
+
+/* 12 column grid mixin with gutter(20px) */
+
+.columns(@n) {
+  width: (100%/12*@n);
+  padding: 0 10px;
+}
+
+/* Font properties */
+.font-basic {
+  font-size: 16px;
+  line-height: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.font-text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.font-title {
+  font-size: 30px;
+  line-height: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+

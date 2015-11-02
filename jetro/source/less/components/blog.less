@@ -1,0 +1,38 @@
+.blog {
+
+  &__post {
+    width: 100%;
+
+    &-content {
+      padding-top: 2.5rem;
+      padding-right: 2.5rem;
+    }
+
+    &-meta {
+      .cell(3);
+
+      &-item {
+        margin-bottom: 1rem;
+      }
+
+      &-heading {
+        margin: 0;
+        text-transform: uppercase;
+        color: @color-primary;
+      }
+
+      &-text {
+        margin: 0;
+        color: @color-secondary;
+      }
+    }
+
+    &-description {
+      .cell(9);
+    }
+
+    &-title {
+      color: @color-primary;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.contact {
+
+  &__map {
+    margin-bottom: 3.5rem;
+    padding: 0 @gutter / 2;
+
+    &-image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__info {
+    .cell(4);
+    padding-right: 3.5rem;
+
+    & strong {
+      color: @color-primary;
+    }
+  }
+
+  &__form {
+    .cell(8);
+    padding-left: 0;
+    padding-bottom: 4rem;
+
+    &-field {
+      display: block;
+      margin-bottom: 1rem;
+      padding: 0.1rem 1.2rem;
+      width: 22rem;
+      color: @color-primary;
+      border: 0.1rem solid @color-primary;
+      background: @color-white;
+
+      &--message {
+        width: 100%;
+        resize: none;
+      }
+
+      &::placeholder {
+        color: @color-primary;
+      }
+    }
+
+    &-btn {
+      padding: 0.1rem 0 0.2rem;
+      width: 7rem;
+      text-align: center;
+      border: none;
+      color: @color-white;
+      background: @color-primary;
+      cursor: pointer;
+    }
+  }
+}

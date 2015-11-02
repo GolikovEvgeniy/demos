@@ -1,0 +1,73 @@
+.about {
+  padding: 100px 0;
+  background: url('../img/bkg_img.png') no-repeat center;
+  background-size: cover;
+
+  .media(@tablet, {
+    padding: 50px 0;
+  });
+
+  &__text {
+    .media(@tablet, {
+      width: 100%;
+      margin-bottom: 30px;
+    });
+
+    .media(@desktop, {
+      margin: 0 auto 50px;
+      max-width: 960px;
+    });
+    .text-large();
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  &__title {
+    .media(@tablet, {
+      width: 100%;
+      margin-bottom: 50px 0;
+    });
+
+    .media(@desktop, {
+      margin: 100px auto;
+      max-width: 960px;
+    });
+
+    .title();
+    padding: 0 20px;
+    text-align: center;
+  }
+}
+
+.features {
+  .wrapper();
+  .container();
+  .row();
+
+  &__item {
+    .column(4);
+
+    .media(@tablet, {
+      float: none;
+      width: 100%;
+      text-align: center;
+    });
+  }
+
+  &__subtitle {
+    .subtitle();
+    margin: 10px 0;
+
+    .media(@tablet, {
+      text-align: center;
+    });
+  }
+
+  &__text {
+    .text-medium();
+    letter-spacing: -0.1px;
+  }
+}
+
+
+
