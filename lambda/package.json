@@ -1,0 +1,15 @@
+{
+  "name": "project",
+  "private": true,
+  "version": "0.0.1",
+  "devDependencies": {
+    "gulp": "latest",
+    "gulp-watch": "latest",
+    "gulp-concat": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-ruby-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-csscomb": "latest",
+    "gulp-imagemin": "latest"
+  }
+}

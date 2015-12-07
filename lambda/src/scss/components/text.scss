@@ -1,0 +1,28 @@
+.text {
+  font-family: $text-font--primary;
+  font-size: rem(16px);
+  line-height: (24px / 16px);
+  color: $black;
+  margin-top: 0;
+  margin-bottom: rem(24px);
+
+  &--light {
+    color: $white;
+  }
+
+  &--secondary {
+    font-family: $text-font--secondary;
+    font-size: rem(25px);
+    line-height: (45px / 25px);
+    text-shadow: rem(1px) rem(1px) rem(3px) $black;
+  }
+
+  &--tertiary {
+    font-family: $text-font--tertiary;
+  }
+
+  &--caption {
+    font-size: rem(18px);
+    line-height: (45px / 18px);
+  }
+}

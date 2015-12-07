@@ -1,0 +1,51 @@
+.promo {
+  height: 100%;
+  height: 100vh;
+  background:url("../img/page-intro-bg.jpg") no-repeat center;
+  background-size: cover;
+
+  &__inner {
+    @include container();
+    height: 100%;
+    
+    &::before {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      margin-left: -(rem(5px));
+      vertical-align: middle;
+    }
+  }
+
+  &__group {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+  }
+
+  &__button-group {
+    @include clearfix();
+
+    &-item {
+      @include column(1, 2, $vertical-gutter: 0px);
+      text-align: center;
+
+      @include breakpoint($small-only) {
+        @include column(1);
+      }
+
+      &:first-child {
+        @include breakpoint($small-up) {
+          text-align: right;
+        }
+      }
+
+      &:last-child {
+        @include breakpoint($small-up) {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

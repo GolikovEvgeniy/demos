@@ -1,0 +1,77 @@
+/*---------------------*\
+    GLOBAL VARIABLES
+/*---------------------*/
+
+/**
+  * Fonts.
+  */
+$font-family--gentium:    'Gentium Book Basic', serif !default;
+$font-family--lato:       'Lato', sans-serif !default;
+$font-family--yeseva:     'Yeseva One', cursive !default;
+$font-family--open-sans:  'Open Sans', sans-serif !default;
+
+$font-size-base: 16px;
+$line-height-base: 24px;
+
+$title-font: $font-family--yeseva;
+$text-font--primary: $font-family--lato;
+$text-font--secondary: $font-family--gentium;
+$text-font--tertiary: $font-family--open-sans;
+$link-font: $font-family--gentium;
+$button-font: $font-family--lato;
+
+
+
+/**
+  * Colors
+  */
+$black: #191919;
+$black--light: #4c4c4c;
+
+$white: #f1f0f0;
+
+$grey: #cfcbbc;
+
+$gold: #c9a131;
+
+
+
+/**
+  * Main breakpoints.
+  */
+$small: 550px !default;
+$medium: 900px !default;
+$large: 1200px !default;
+
+
+$small-only: "(max-width: #{$small / 16px * 1em})" !default;
+$small-up: "(min-width: #{($small + 1) / 16px * 1em})" !default;
+
+$medium-down: "(max-width: #{$medium / 16px * 1em})" !default;
+$medium-only: "#{$small-up} and #{$medium-down}" !default;
+$medium-up: "(min-width: #{($medium + 1) / 16px * 1em})" !default;
+
+$large-down: "(max-width: #{$large / 16px * 1em})" !default;
+$large-only: "#{$medium-up} and #{$large-down}" !default;
+$large-up: "(min-width: #{($large + 1) / 16px * 1em})" !default;
+
+
+/**
+  * Additional breakpoints.
+  */
+$medium-small-max: "(max-width: 48em)" !default;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

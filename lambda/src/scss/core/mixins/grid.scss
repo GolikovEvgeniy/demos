@@ -1,0 +1,76 @@
+/*-------------------------*\
+    GRID VARIABLES
+/*-------------------------*/
+  $gutter-width: 30px !default;
+  $container-width: 1200px !default;
+
+
+
+/**
+  * Defines fluid central wrapper of page.
+  * 1. Set left and right padding to half of grid gutter and output it in rems.
+  * 2. Set container max-width and output it in rems.
+  * 3. Fixing block of floated items from collapsing.
+  */
+@mixin container($container: $container-width, $gutter: $gutter-width) {
+    margin: 0 auto;
+    padding: 0 rem( $gutter / 2 ); /* [1] */
+    width: 100%;
+    max-width: rem( $container ); /* [2] */
+    @include clearfix(); /* [3] */
+}
+
+
+
+/**
+  * Defines row of columns.
+  * 1. Apply negative margin to negate column gutters and output it in rems.
+  * 2. Fixing block of floated items from collapsing.
+  */
+@mixin row($horizontal-gutter: $gutter-width, $vertical-gutter: $horizontal-gutter) {
+  margin: rem( $vertical-gutter / -2 ) rem( $horizontal-gutter / -2 ); /* [1] */
+  @include clearfix(); /* [2] */
+}
+
+
+
+/**
+  * Defines grid columns.
+  * 1. Set column width proportion.
+  * 2. Set padding to half of grid gutter and output it in rems.
+  * 3. Set a number of items per row and clear every first item in line.
+  * 4. Reset clearing for every screen breakpoint.
+  */
+@mixin column($target,
+            $context: 1,
+            $horizontal-gutter: $gutter-width,
+            $vertical-gutter: $horizontal-gutter,
+            $direction: left,
+            $items: null) {
+
+  float: $direction;
+  width: ($target / $context) * 100%; /* [1] */
+  padding: rem( $vertical-gutter / 2 ) rem( $horizontal-gutter / 2 ); /* [2] */
+
+  @if ($items) { /* [3] */
+    &:nth-child(n) { /* [4] */
+      clear: none;
+    }
+    &:nth-child(#{$items}n+1) {
+      clear: both;
+    }
+  }
+}
+
+
+
+/**
+  * Offsets columns from left side.
+  */
+@mixin offset($target, $context) {
+  margin-left: ($target / $context) * 100%;
+}
+
+
+
+

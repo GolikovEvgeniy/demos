@@ -1,0 +1,38 @@
+.divider {
+  position: relative;
+  margin: rem(24px) 0;
+  height: 1px;
+
+  &--main {
+    margin: rem(48px) 0;
+
+    @include breakpoint($medium-down) {
+      margin: rem(36px) 0;
+    }
+
+    & .divider__image {
+      width: rem(250px);
+
+      @include breakpoint($medium-down) {
+        width: rem(180px);
+      }
+    }
+  }
+
+  &--secondary {
+
+    & .divider__image {
+      width: rem(180px);
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: rem(240px);
+  }
+}

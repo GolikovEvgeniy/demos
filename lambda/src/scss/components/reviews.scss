@@ -1,0 +1,43 @@
+.reviews {
+  padding: rem(100px) 0;
+  background: url("../img/reviews-bg.jpg");
+  background-size: cover;
+
+  &__inner {
+    @include container();
+  }
+
+  &__group {
+    @include row();
+  }
+
+  &__item {
+    @include column(2, 3);
+    @include offset(1, 6);
+
+    @include breakpoint($large-down) {
+      @include column(3, 4);
+      @include offset(1, 8);
+    }
+
+    @include breakpoint($medium-down) {
+      @include column(4, 5);
+      @include offset(1, 10);
+    }
+
+    @include breakpoint($medium-small-max) {
+      @include column(1);
+      margin-left: 0;
+    }
+  }
+
+  &__content {
+    padding: rem(70px);
+    background: rgba($black, 0.7);
+    text-align: center;
+
+    @include breakpoint($small-only) {
+      padding: rem(15px);
+    }
+  }
+}

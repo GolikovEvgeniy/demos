@@ -1,0 +1,21 @@
+.page-footer {
+  padding: rem(50px) 0;
+  background: $black;
+
+  &__inner {
+    @include container();
+  }
+
+  &__group {
+    @include row();
+  }
+
+  &__item {
+    @include column(1, 3);
+    text-align: center;
+
+    @include breakpoint($medium-down) {
+      @include column(1);
+    }
+  }
+}

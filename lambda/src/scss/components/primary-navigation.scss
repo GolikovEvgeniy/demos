@@ -1,0 +1,108 @@
+.primary-navigation {
+  position: relative;
+
+  &__menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    @include clearfix();
+
+    @include breakpoint($medium-down) {
+      position: absolute;
+      top: rem(42px);
+      right: 0;
+      width: 0;
+      height: 0;
+      border: 0;
+      opacity: 0;
+    }
+
+    &-item {
+      float: left;
+
+      & + &:not(:last-child) {
+        margin-left: rem(20px);
+
+        @include breakpoint($large-down) {
+          margin-left: 0;
+        }
+      }
+
+      @include breakpoint($medium-down) {
+        float: none;
+        border-bottom: 1px solid $black;
+      }
+    }
+
+    &-link {
+      padding: 0 rem(15px);
+      display: block;
+      font-family: $link-font;
+      font-size: rem(21px);
+      line-height: rem(110px);
+      text-align: center;
+      text-decoration: none;
+      vertical-align: middle;
+      color: $white;
+      transition: all 0.15s ease-out;
+
+      @include breakpoint($large-down) {
+        font-size: rem(18px);
+      }
+
+      @include breakpoint($medium-down) {
+        line-height: rem(50px);
+        background: rgba($black, 0.5);
+      }
+
+      &:hover,
+      &:focus {
+        outline: none;
+        border-top: 3px solid $grey;
+
+        @include breakpoint($medium-down) {
+          border: none;
+          background: rgba($black, 0.8);
+        }
+      }
+    }
+  }
+
+  &__toggle-button {
+    display: block;
+    font-size: rem(18px);
+    margin-top: rem(15px);
+    padding: rem(10px);
+    font-family: $link-font;
+    text-decoration: none;
+    color: $white;
+    border: 1px solid $black;
+    background: rgba($black, 0.5);
+    transition: all 0.15s ease-out;
+
+    @include breakpoint($medium-up) {
+      display: none;
+    }
+
+    &:hover,
+    &:focus {
+      background: rgba($black, 0.8);
+      outline: none;
+    }
+  }
+}
+
+
+
+.primary-navigation.is-visible .primary-navigation__menu {
+  width: rem(175px);
+  height: rem(359px);
+  border: 1px solid $black;
+  opacity: 1;
+  transition: width 0.2s ease-out,
+            height 0.2s ease-out,
+            opacity 0.2s ease-in;
+}
+

@@ -1,0 +1,43 @@
+.button {
+  display: inline-block;
+  padding: rem(18px);
+  width: rem(228px);
+  font-family: $button-font;
+  font-size: rem(18px);
+  line-height: (24px / 18px);
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: $white;
+  transition: background-color 0.2s ease-in-out;
+
+  @include breakpoint($medium-down) {
+    font-size: rem(16px);
+    width: rem(180px);
+    padding: rem(16px);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &--dark {
+    border: 1px solid $black;
+    background: rgba($black, 0.5);
+
+    &:hover,
+    &:focus {
+      background: rgba($black, 0.8);
+    }
+  }
+
+  &--light {
+    border: 1px solid $white;
+    background: rgba($white, 0.3);
+
+    &:hover,
+    &:focus {
+      background: rgba($white, 0.5);
+    }
+  }
+}

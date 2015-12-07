@@ -1,0 +1,114 @@
+.social {
+  list-style: none;
+  margin: rem(50px) 0 0;
+  padding: 0;
+  text-align: center;
+
+  &--main {
+    margin: 0;
+    
+    @include breakpoint($medium-down) {
+      background: rgba($black, 0.5);
+    }
+  }
+
+
+  &--main &__item + &__item {
+    margin-left: rem(10px);
+
+    @include breakpoint($large-down) {
+      margin-left: rem(10px);
+    }
+
+    @include breakpoint($medium-down) {
+      margin-left: rem(30px);
+    }
+  }
+
+  &--main &__item {
+    line-height: rem(110px);
+
+    @include breakpoint($medium-down) {
+      line-height: rem(50px);
+    }
+  }
+
+  &--main &__link {
+    font-size: rem(21px);
+    color: $gold;
+
+    @include breakpoint($large-down) {
+      font-size: rem(18px);
+    }
+
+    &:hover,
+    &:focus {
+      color: darken($gold, 12);
+      outline: none;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: middle;
+
+    & + & {
+      margin-left: rem(8px);
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    font-family: "fontello";
+    text-decoration: none;
+    font-size: rem(18px);
+    color: $white;
+
+    &:hover,
+    &:focus {
+      color: darken($white, 25);
+      outline: none;
+    }
+
+    &--twitter:before {
+      content: "\e806";
+    }
+
+    &--youtube:before {
+      content: "\e808";
+    }
+
+    &--facebook:before {
+      content: "\e809";
+    }
+
+    &--trello:before {
+      content: "\e805";
+    }
+
+    &--visa:before {
+      content: "\e801";
+    }
+
+    &--discover:before {
+      content: "\e802";
+    }
+
+    &--amex:before {
+      content: "\e803";
+    }
+
+    &--paypal:before {
+      content: "\e804";
+    }
+  }
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,11 @@
+/**
+  * Simple breakpoint mixin.
+  */
+@mixin breakpoint($breakpoint) {
+
+  @media #{$breakpoint} {
+    @content;
+  }
+}
+
+

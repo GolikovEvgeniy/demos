@@ -1,0 +1,44 @@
+.title {
+  font-family: $title-font;
+  font-size: rem(36px);
+  line-height: (48px / 36px);
+  margin: 0;
+  color: $white;
+  text-shadow: rem(1px) rem(1px) rem(3px) $black;
+
+  &--gold {
+    color: $gold;
+    text-shadow: none;
+  }
+
+  &--main {
+    font-size: rem(90px);
+    line-height: (120px / 90px);
+    letter-spacing: rem(2px);
+    text-shadow: rem(1px) rem(1px) rem(3px) $black;
+    width: 11 / 12 * 100%;
+    margin-left: 1 / 24 * 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @include breakpoint($large-down) {
+      font-size: rem(60px);
+      line-height: (72px / 60px);
+    }
+
+    @include breakpoint($medium-down) {
+      font-size: rem(48px);
+      line-height: (72px / 48px);
+    }
+
+    @include breakpoint($small-only) {
+      font-size: rem(36px);
+      line-height: (48px / 36px);
+    }
+  }
+
+  &--sub {
+    font-size: rem(21px);
+    line-height: (24px / 24px);
+  }
+}

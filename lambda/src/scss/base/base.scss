@@ -1,0 +1,42 @@
+/**
+  * Changing default box-model.
+  */
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after,
+input[type="search"] {
+  box-sizing: inherit;
+}
+
+/**
+  * Making body children inheriting full window height (vh fallback).
+  */
+body {
+  height: 100%;
+}
+
+/**
+  * Making images fluid.
+  */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
